@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Sway by Fuel Labs</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -536,6 +536,44 @@ let y: byte = 0xAF;
 
 let z: byte = 0b10101010;
 ```
+          </textarea>
+        </section>
+        <section data-markdown data-separator-vertical="^\n\n" data-separator-notes="^Note:">
+          <textarea data-template>
+            ### Speed round
+
+
+#### Ifs are expressions
+```rust
+let civilian_time = if time.hours &gt; 12 {
+    Time { 
+      hours: time.hours - 12, 
+      minutes: time.minutes 
+    }
+  } else {
+    time
+  };
+```
+
+
+#### Unchecked Arithmetic
+
+```rust
+arithmetic: wrapping {
+   0xff_fff_fffu32 + 1 == 0
+}
+```
+
+Note: we use the canonical names of the arithmetic types instead of the more vague "unchecked" term. Math will panic if it overflows by default. 
+
+
+#### Sweet underscore syntax
+```rust
+arithmetic: wrapping {
+   0xff_fff_fffu32 + 1 == 0
+}
+```
+
           </textarea>
         </section>
 			</div>
