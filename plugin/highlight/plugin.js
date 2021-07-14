@@ -8,6 +8,9 @@ import hljs from 'highlight.js'
  * reveal.js plugin that adds syntax highlight support.
  */
 
+
+window.hljs = hljs;
+
 const Plugin = {
 
 	id: 'highlight',
