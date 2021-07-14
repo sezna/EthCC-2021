@@ -16,8 +16,76 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Sway: A Rust-based Smart Contract Language
+
+            Alex Hansen
+
+            Fuel Labs
+
+            Sorbonne Room, 4:25pm
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Agenda
+            1. Introduce Sway
+            1. Compare and Contrast Sway with Solidity
+            1. Introduce Forc
+
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            motivation and what sway is (rust + solidity)
+            solidity introduced paradigms into a language necessary for ergonomic blockchain development
+            it is used more than approaches that import libraries and APIs into existing general purpose langauges
+            the domain is served better with a language
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            sway is...
+            Rust:
+            statically typed
+            compiled 
+            rusty
+            prepackaged with an entire toolchain (formatter, compiler, testing tools, deployment to the chain)
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            sway is...
+            Solidity:
+            primarily designed for smart contract development
+            integrates contract storage as a language construct
+
+            statically typed
+            compiled 
+            rusty
+            prepackaged with an entire toolchain (formatter, compiler, testing tools, deployment to the chain)
+          </textarea>
+        </section>
+        <section data-markdown>Markdown test
+          <textarea data-template>
+            ## And, how does this work again?
+            The Sway compiler has a swappable back end to target multiple chains. Our initial target is smart contract development on Ethereum. 
+          </textarea>
+        </section>
+        <section data-markdown>Markdown test
+          <textarea data-template>
+            ## A first impression
+            ```rust
+contract;
+abi {
+
+}
+            ```
+
+            The Sway compiler has a swappable back end to target multiple chains. Our initial target is smart contract development on Ethereum. 
+          </textarea>
+        </section>
 			</div>
 		</div>
 
