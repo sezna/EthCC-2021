@@ -29,45 +29,122 @@
         </section>
         <section data-markdown>
           <textarea data-template>
-            ## Agenda
-            1. Introduce Sway
-            1. Compare and Contrast Sway with Solidity
-            1. Introduce Forc
+            # What is Sway?
+            <aside class="notes">
+              Sway was motivated by Solidity and Rust. We believe Rust made a lot of correct decisions in its implementation,
+              and we want to combine that with the ergonomic first-class blockchain support that Solidity brings to the table. 
 
+              Look at its adoption: it is used more than approaches that import libraries and APIs into existing general purpose langauges
+              to accomplish the same task. Using a language designed for this domain is what people want.
+            </aside>
           </textarea>
         </section>
         <section data-markdown>
           <textarea data-template>
-            motivation and what sway is (rust + solidity)
-            solidity introduced paradigms into a language necessary for ergonomic blockchain development
-            it is used more than approaches that import libraries and APIs into existing general purpose langauges
-            the domain is served better with a language
+            <img src="https://rustacean.net/assets/rustacean-orig-noshadow.svg" width=200 alt="rust" style="margin-bottom: -50px" /> 
+            <section data-auto-animate>
+              <ul>
+                <li>Statically Typed</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Statically Typed</li>
+                <li>Verbose and friendly compiler</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Statically Typed</li>
+                <li>Verbose and friendly compiler</li>
+                <li>Syntax</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Statically Typed</li>
+                <li>Verbose and friendly compiler</li>
+                <li>Syntax</li>
+                <li>Trait-based Shared Behavior</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Statically Typed</li>
+                <li>Verbose and friendly compiler</li>
+                <li>Syntax</li>
+                <li>Trait-based Shared Behavior</li>
+                <li>Packaged with tooling</li>
+              </ul>
+            </section>
+            <aside class="notes">
+              So, we grabbed some philosophy from Rust, some philosophy from Solidity, and got to work. From Rust, we took 
+            </aside>
           </textarea>
         </section>
         <section data-markdown>
           <textarea data-template>
-            sway is...
-            Rust:
-            statically typed
-            compiled 
-            rusty
-            prepackaged with an entire toolchain (formatter, compiler, testing tools, deployment to the chain)
+            <h2><img src="https://docs.soliditylang.org/en/v0.8.6/_images/logo.svg" width=200px alt="solidity" style="filter: invert(70%);" /></h2>
+            <section data-auto-animate>
+              <ul>
+                <li>Designed around smart contract development</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Designed around smart contract development</li>
+                <li>Integrates contract storage as a language construct</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Designed around smart contract development</li>
+                <li>Integrates contract storage as a language construct</li>
+                <li>Allows for shareable contract interfaces</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Designed around smart contract development</li>
+                <li>Integrates contract storage as a language construct</li>
+                <li>Allows for shareable contract interfaces</li>
+                <li>Feels like it was actually made for the task</li>
+              </ul>
+            </section>
           </textarea>
         </section>
         <section data-markdown>
           <textarea data-template>
-            sway is...
-            Solidity:
-            primarily designed for smart contract development
-            integrates contract storage as a language construct
-
-            statically typed
-            compiled 
-            rusty
-            prepackaged with an entire toolchain (formatter, compiler, testing tools, deployment to the chain)
+            <h2><img src="https://avatars.githubusercontent.com/u/55993183?s=200&v=4" width=200px alt="fuel labs" /> </h2>
+            <section data-auto-animate>
+              <ul>
+                <li>Be fast and efficient</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Be fast and efficient</li>
+                <li>Be easily auditable</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Be fast and efficient</li>
+                <li>Be easily auditable</li>
+                <li>Maintain SemVer and backwards port security fixes</li>
+              </ul>
+            </section>
+            <section data-auto-animate>
+              <ul>
+                <li>Be fast and efficient</li>
+                <li>Be easily auditable</li>
+                <li>Maintain SemVer and backwards port security fixes</li>
+                <li>Generally learn from angry tweets about both Solidity and Rust</li>
+              </ul>
+            </section>
           </textarea>
         </section>
-        <section data-markdown>Markdown test
+        <section data-markdown>
           <textarea data-template>
             ## And, how does this work again?
             The Sway compiler has a swappable back end to target multiple chains. Our initial target is smart contract development on Ethereum. 
@@ -99,6 +176,7 @@ abi {
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+        showNotes: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
