@@ -90,8 +90,8 @@ abi Purchase {
 
 impl Purchase for Contract {
   view fn abort() {
-    assert_eq!(contract.caller_id, seller);
-    abort()
+    assert_eq!(context.caller_id, seller);
+    abort_inner()
   }
 }
 ```

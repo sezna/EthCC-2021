@@ -32,3 +32,17 @@ arithmetic: wrapping {
 }
 ```
 
+
+#### Matches are Expressions
+```rust
+let centimeters = match unit {
+  Unit::Centimeters => x,
+  Unit::Decimeters => x * 10,
+  Unit::Meters => x * 1_000,
+  Unit::Kilometers => x * 100_000,
+  _ => return Err(UnknownUnit)
+}
+```
+
+Note:
+Note that this is a match as an expression, and note exhaustive errors
