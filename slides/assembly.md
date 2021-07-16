@@ -69,3 +69,4 @@ let x = if predicate {
 ```
 Note: Solidity offers control flow inside of assembly blocks. In Sway, we instead make assembly blocks expressions,
 so control flow can be handled in normal Sway without a separate syntax.
+Things in solidity's assembly constructs like offsets within registers, addresses to heap memory, etc. are all the same in our assembly language.
