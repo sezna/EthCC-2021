@@ -53,3 +53,19 @@ fn complex_things(a: bool) -> bool {
 ```
 
 Note: any expressions in asm init
+
+
+---
+
+```rust
+let x = if predicate { 
+    asm(r1: foo(), r2: bar()) {
+      [ ... ]
+  } else {
+    asm(r1: bar(), r2: baz()) {
+      [ ... ]
+  }
+};
+```
+Note: Solidity offers control flow inside of assembly blocks. In Sway, we instead make assembly blocks expressions,
+so control flow can be handled in normal Sway without a separate syntax.
