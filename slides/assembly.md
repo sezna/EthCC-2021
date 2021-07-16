@@ -51,11 +51,9 @@ fn complex_things(a: bool) -> bool {
   }
 }
 ```
-
 Note: any expressions in asm init
 
-
----
+----
 
 ```rust
 let x = if predicate { 
