@@ -44,3 +44,26 @@ let y: byte = 0xAF;
 
 let z: byte = 0b10101010;
 ```
+----
+
+### Discriminated Unions
+
+```rust
+enum Sale {
+  Product: Product,
+  Service: Service,
+}
+
+struct Product {
+  sku: str[8],
+  price: u64,
+}
+
+struct Service {
+  name: str[15],
+  hourly_rate: u64,
+}
+```
+
+
+Note: We also support discriminated union types, where the variants of the enumeration contain different values. 
