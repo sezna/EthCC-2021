@@ -3,7 +3,7 @@
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity &gt;0.7.0 &lt;0.9.0;
+pragma solidity >0.7.0 <0.9.0;
 
 contract SimpleAuction {
     function bid() public payable { // Function
@@ -35,7 +35,7 @@ impl SimpleAuction for Contract {
   }
 }
 
-fn helper(x: u64) -&gt; u64 {
+fn helper(x: u64) -> u64 {
   x * 2
 }
 

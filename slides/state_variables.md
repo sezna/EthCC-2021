@@ -3,7 +3,7 @@
 
 
 ```solidity
-pragma solidity &gt;=0.4.0 &lt;0.9.0;
+pragma solidity >=0.4.0 <0.9.0;
 contract SimpleStorage {
     uint storedData; // State variable
     // ...
@@ -16,7 +16,7 @@ This pragma is handled in our toml file, similarly to how Rust configures via Ca
 
 
 ```solidity
-pragma solidity &gt;=0.4.0 &lt;0.9.0;
+pragma solidity >=0.4.0 <0.9.0;
 contract SimpleStorage {
     uint storedData; // State variable
     // ...

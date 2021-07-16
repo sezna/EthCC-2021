@@ -3,7 +3,7 @@
 
 #### Ifs are expressions
 ```rust
-let civilian_time = if time.hours &gt; 12 {
+let civilian_time = if time.hours > 12 {
     Time { 
       hours: time.hours - 12, 
       minutes: time.minutes 

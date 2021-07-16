@@ -21,7 +21,7 @@ We mainly just support the primitive types that Solidity cares about, and are co
 
 ```rust
 contract;
-trait Foo&lt;T, E&gt;
+trait Foo<T, E>
   where T: Bar + Baz,
         E: Quux {
       [ ... ]

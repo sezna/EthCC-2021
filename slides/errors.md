@@ -5,10 +5,10 @@
 error NotEnoughFunds(uint requested, uint available);
 
 contract Token {
-    mapping(address =&gt; uint) balances;
+    mapping(address => uint) balances;
     function transfer(address to, uint amount) public {
         uint balance = balances[msg.sender];
-        if (balance &lt; amount)
+        if (balance < amount)
             revert NotEnoughFunds(amount, balance);
         balances[msg.sender] -= amount;
         balances[to] += amount;
@@ -32,7 +32,7 @@ struct NotEnoughFunds {
 
 impl Token for Contract {
   naughty fn transfer(to: Address, amount: u64) {
-        if balance &lt; amount { 
+        if balance < amount { 
           revert(NotEnoughFunds { requested: amount, available: contract.balances[msg.sender] });
         }
         contract.balances[msg.sender] -= amount;
@@ -58,8 +58,8 @@ struct NotEnoughFunds {
 
 impl Token for Contract {
   naughty fn transfer(to: Address, amount: u64) 
-    -&gt; Result&lt;(), NotEnoughFunds&gt; {
-        if balance &lt; amount { 
+    -> Result<(), NotEnoughFunds> {
+        if balance < amount { 
           return Err(NotEnoughFunds { 
            requested: amount,
            available: contract.balances[msg.sender] 

@@ -11,7 +11,7 @@ struct NotEnoughFunds {
   available: u64
 }
 
-enum Result&lt;T, E&gt; {
+enum Result<T, E> {
   Ok: T,
   Err: E,
 }
