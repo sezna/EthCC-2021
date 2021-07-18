@@ -12,9 +12,7 @@ assembly {
     extcodecopy(_addr, add(o_code, 0x20), 0, size)
 }
 ```
-
-Note: Here's an assembly example from Solidity's documentation. We target our own bytecode, which then is transpiled. Therefore,
-our assembly notion looks a bit different as you are actually targeting Fuel Labs' opcodes. Let's take a look:
+Note: Here's an assembly example from Solidity's documentation. The Sway compiler currently targets a register-based instruction set, which can be transpiled to EVM. Therefore, our assembly notion looks a bit different that you might be used to. Let's take a look:
 
 ----
 

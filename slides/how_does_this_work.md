@@ -4,7 +4,7 @@
 1. A full team of developers working on tooling in parallel with the compiler.
 
 Note: 
-  The swappable back end allows for targeting different chains. We are starting with Ethereum.
+  I'd instead say that we're starting with an EVM-like instruction set can be transpiled to EVM without too much effort
   for point 2 -- we found that libraries or extensions of other general purpose languages tend
   to lack the domain specificity that smart contract development requires
   For point 3 -- we believe it invaluable that the tooling developers and the compiler developers are
