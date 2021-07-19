@@ -1,4 +1,4 @@
-### Example Contracts
+### Example Contract
 
 ```rust
 contract;
