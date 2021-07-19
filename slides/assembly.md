@@ -54,7 +54,7 @@ Note: any expressions in asm init
 ----
 
 ```rust
-let x = if predicate { 
+let x = if some_boolean_value { 
     asm(r1: foo(), r2: bar()) {
       [ ... ]
   } else {

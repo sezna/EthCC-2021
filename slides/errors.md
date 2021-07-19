@@ -32,7 +32,7 @@ struct NotEnoughFunds {
 
 impl Token for Contract {
   naughty fn transfer(to: Address, amount: u64) {
-        if balance < amount { 
+        if contract.balances[msg.sender] < amount { 
           revert(NotEnoughFunds { requested: amount, available: contract.balances[msg.sender] });
         }
         contract.balances[msg.sender] -= amount;
