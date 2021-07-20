@@ -74,7 +74,11 @@ contract Purchase {
 ```
 
 Note:
-cover removal of modifiers, assert! macro instead of require
+Because modifier behavior can be accomplished with function composition and traits, we chose not to use function modifiers.
+This eliminates a lot of organizational and security issues related to their opaqueness and redirects. Additionally, when
+an `_` is used to denote "paste the body of the modified function here", it is not optimized properly. 
+
+We also use an `assert` that is more similar to Rust's assert instead of require, but very similar.
 
 
 ```rust
@@ -85,7 +89,7 @@ let seller: Address = Address(
 );
 
 abi Purchase {
-  view fn abort_inner();
+  view fn abort();
 } 
 
 impl Purchase for Contract {
