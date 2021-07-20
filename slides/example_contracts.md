@@ -17,3 +17,13 @@ impl UnauthenticatedMoneyHole for Contract {
   }
 }
 ```
+
+----
+
+```rust
+use moneyhole::UnauthenticatedMoneyHole;
+let caller = contract_caller(0xffff[...], UnauthenticatedMoneyHole);
+
+// Deposit 0 coins.
+caller.deposit(CallParameters::Default());
+```
